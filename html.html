@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="stylesheet.css">
+	<title>My Website</title>
+</head>
+<body>
+	<h1>Welcome to...</h1>
+	<p>This is a paragraph...</p>
+	<ul>
+		<li>Item 1</li>
+		<li>Item 2</li>
+	</ul>
+	<img src="image.png"/>
+	<ol>
+		<li>Item 3</li>
+		<li>Item 4</li>
+		<li>Item 5</li>
+	</ol>
+	<p>I have learned that <a href="https://www.youtube.com/watch?v=GJDNkVDGM_s">there is no need to be upset</a></p>
+	<h3 style="color: red">h3 heading</h3>
+	<input type="text" id="number" oninput="this.value=this.value.replace(/(?![0-9])./gmi,'')"/>
+	<button onclick="Function()">calculate</button>
+	<p id="output"></p>
+	<script>
+		function Function(){
+			document.getElementById("output").innerHTML = document.getElementById("number").value % 2 == 0 ? "even" : "odd";
+		}
+	</script>
+</body>
+</html>
